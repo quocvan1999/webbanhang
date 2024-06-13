@@ -1,0 +1,13 @@
+.button {
+  background: $color-2;
+  color: $color-1;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 7px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: $box-shadow-1;
+  }
+}
