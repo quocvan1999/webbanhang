@@ -68,7 +68,7 @@
                         Design by Lý Quốc Văn
                     </p>
                 </div>
-                <div class="w-100 d-flex align-items-center justify-content-center">
+                <!-- <div class="w-100 d-flex align-items-center justify-content-center">
                     <a href="#">
                         <i class="fa-brands fa-bootstrap fs-5" style="color: #8512FB;"></i>
                     </a>
@@ -81,7 +81,7 @@
                     <a href="#">
                         <i class="fa-solid fa-font-awesome fs-5" style="color: #1C7ED6;"></i>
                     </a>
-                </div>
+                </div> -->
             </footer>
         </div>
 
@@ -89,20 +89,28 @@
             <header
                 class="w-95 mx-auto mt-3 rounded-2 bg-white d-flex align-items-center justify-content-around py-2 px-3">
                 <a href="#" id="btnButtonMenu" class="d-none">
-                    <i class="bi bi-list fs-2"></i>
+                    <i class="bi bi-list fs-2 text-02"></i>
                 </a>
                 <div class="w-70 d-flex align-items-center justify-content-between">
-                    <i class="bi bi-search fs-5"></i>
+                    <i class="bi bi-search fs-5 text-02"></i>
                     <input type="text" class="form-control border-0" name="inputSearch" id="inputSearch"
                         aria-describedby="helpId" placeholder="Search" />
                 </div>
-                <a href="#" class="text-02">
-                    <i class="bi bi-brightness-high fs-4"></i>
-                    <i class="bi bi-moon-stars-fill fs-4 d-none"></i>
-                </a>
-
-                <div id="user__container" class="rounded-circle d-flex align-items-center justify-content-center">
-                    <i class="bi bi-person fs-2"></i>
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="text-02">
+                        <i class="bi bi-brightness-high fs-4 text-02"></i>
+                        <i class="bi bi-moon-stars-fill fs-4 text-02 d-none"></i>
+                    </a>
+                    <div class="position-relative mx-3">
+                        <span class="bg-01 d-inline-block rounded-circle text-white position-absolute"
+                            style="width: 20px; height: 20px; right: -5px; top: -5px;">
+                            <div class="w-100 h-100 d-flex align-items-center justify-content-center fw-bold">5</div>
+                        </span>
+                        <i class="bi bi-bell-fill fs-4 text-02"></i>
+                    </div>
+                    <div id="user__container" class="rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="bi bi-person text-02 fs-2"></i>
+                    </div>
                 </div>
             </header>
             <nav class="w-95 bg-white mt-3 mx-auto rounded-2 d-flex align-items-center px-3 py-2">
@@ -113,23 +121,117 @@
             </nav>
 
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
+            <div class="modal fade w-100" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog w-100">
+                    <div class="modal-content w-100">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Thêm sản phẩm mới</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <form id="formAddProduc" class="row">
+                                <div class="d-flex flex-column col-md-6 mb-3">
+                                    <label for="tenSanPham">Tên sản phẩm</label>
+                                    <input class="input1" type="text" name="tenSanPham" placeholder="Nhập tên sản phẩm">
+                                </div>
+                                <div class="d-flex flex-column col-md-6 mb-3">
+                                    <label for="tenSanPham">Số lượng</label>
+                                    <input class="input1" type="number" name="tenSanPham" placeholder="Nhập số lượng">
+                                </div>
+                                <div class="d-flex flex-column col-md-6 mb-3">
+                                    <label for="">Hãng</label>
+                                    <select class="input1">
+                                        <option selected>Chọn hãng điện thoại</option>
+                                        <option value="1">Apler</option>
+                                        <option value="2">Samsung</option>
+                                        <option value="3">Xiaomi</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column col-md-6 mb-3">
+                                    <label for="">Loại</label>
+                                    <select class="input1">
+                                        <option selected>Chọn loại</option>
+                                        <option value="1">Điện thoại</option>
+                                        <option value="2">Table</option>
+                                        <option value="3">Đồng máy tính</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column col-md-6 mb-3">
+                                    <label for="">Dung lượng</label>
+                                    <div>
+                                        <div>
+                                            <select class="input1">
+                                                <option selected>Chọn dung lượng</option>
+                                                <option value="1">86GB</option>
+                                                <option value="2">120GB</option>
+                                                <option value="3">520GB</option>
+                                            </select>
+                                            <input class="input1" type="number" placeholder="Nhập giá">
+                                            <button class="button">
+                                                <i class="bi bi-trash2-fill"></i>
+                                            </button>
+                                        </div>
+                                        <button class="button">
+                                            <i class="bi bi-plus-lg"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column col-md-6 mb-3">
+                                    <label for="">Màu</label>
+                                    <div>
+                                        <div>
+                                            <select class="input1">
+                                                <option selected>Chọn màu</option>
+                                                <option value="1">Xanh</option>
+                                                <option value="2">Đỏ</option>
+                                                <option value="3">Hồng</option>
+                                            </select>
+                                            <input class="input1" type="number" placeholder="Nhập giá">
+                                            <button class="button">
+                                                <i class="bi bi-trash2-fill"></i>
+                                            </button>
+                                        </div>
+                                        <button class="button">
+                                            <i class="bi bi-plus-lg"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column col-md-6 mb-3">
+                                    <label for="">Ảnh</label>
+                                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                </div>
+                                <div class="d-flex flex-column col-md-6 mb-3">
+                                    <label for="">Mô tả</label>
+                                    <textarea class="form-control" placeholder="Nhập mô tả sản phẩm"
+                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                </div>
+                            </form>
+
+                            <!--
+                                 id** - api random number
+                                 tên - input text
+                                 đánh giá** - api number
+                                 [dung lượng, giá ] input-group
+                                 [màu, giá] 
+                                 mô tả - textarea
+                                 [ảnh] - Multiple files input example
+                                 hãng - input select
+                                 Loại - input select
+                                 số lượng - input number
+                                    -->
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="button" class="button">Thêm</button>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- LIST -->
+            <div>
+
             </div>
         </div>
     </div>
