@@ -191,6 +191,7 @@ a {
 #menu #menu__list .active {
   background: linear-gradient(90deg, rgb(215, 0, 24) 49%, rgb(213, 71, 71) 100%);
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 #menu #menu__list .active a {
   color: #fff;
@@ -290,6 +291,24 @@ header #user__container {
   max-width: 70%;
 }
 
+#list__container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#list__container .list__content table tbody tr {
+  cursor: pointer;
+}
+#list__container .list__content table tbody tr .actions a {
+  transition: all 0.5s;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+#list__container .list__content table tbody tr .actions a:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 .button {
   background: #d70018;
   color: #fff;
@@ -304,7 +323,7 @@ header #user__container {
 }
 
 .input1 {
-  border: 1px solid #686d76;
+  border: 1px solid #c2bfbf;
   padding: 5px 7px;
   border-radius: 7px;
 }

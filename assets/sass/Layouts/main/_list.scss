@@ -1,0 +1,28 @@
+#list__container {
+  box-shadow: $box-shadow-2;
+
+  .list__content {
+    table {
+      tbody {
+        tr {
+          cursor: pointer;
+
+          .actions {
+            a {
+              transition: all 0.5s;
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              line-height: 20px;
+              text-align: center;
+
+              &:hover {
+                box-shadow: $box-shadow-1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
