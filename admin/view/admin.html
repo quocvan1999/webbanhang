@@ -120,7 +120,7 @@
                 </button>
             </nav>
 
-            <!-- Modal -->
+            <!-- Modal add new product -->
             <div class="modal fade w-100" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog w-100">
@@ -207,23 +207,27 @@
                                         id="floatingTextarea2" style="height: 100px"></textarea>
                                 </div>
                             </form>
-
-                            <!--
-                                 id** - api random number
-                                 tên - input text
-                                 đánh giá** - api number
-                                 [dung lượng, giá ] input-group
-                                 [màu, giá] 
-                                 mô tả - textarea
-                                 [ảnh] - Multiple files input example
-                                 hãng - input select
-                                 Loại - input select
-                                 số lượng - input number
-                                 ngày
-                                    -->
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="button" class="button">Thêm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detaileModal fade w-100" id="detailBackdrop" data-bs-backdrop="detail" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog w-100">
+                    <div class="modal-content w-100">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Cập nhật sản phẩm</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="detaileModal">Đóng</button>
                             <button type="button" class="button">Thêm</button>
                         </div>
                     </div>
@@ -263,7 +267,7 @@
                                     <a href="#" class="mx-2">
                                         <i class="bi bi-trash-fill text-02"></i>
                                     </a>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <a href="#" data-bs-toggle="detaileModal" data-bs-target="#detailBackdrop">
                                         <i class="bi bi-three-dots-vertical text-02"></i>
                                     </a>
                                 </td>
