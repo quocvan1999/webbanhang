@@ -189,12 +189,11 @@ a {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 #menu #menu__list .active {
-  background: linear-gradient(90deg, rgb(215, 0, 24) 49%, rgb(213, 71, 71) 100%);
-  color: #fff;
+  color: #d70018;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 #menu #menu__list .active a {
-  color: #fff;
+  color: #d70018;
 }
 #menu #menu__list .active:hover {
   background: linear-gradient(90deg, rgb(215, 0, 24) 49%, rgb(213, 71, 71) 100%);
@@ -277,6 +276,12 @@ header div input:focus {
   border: none;
   box-shadow: none !important;
 }
+header #thongBao__container #showThongBao {
+  width: 400px;
+  right: 0;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 header #user__container {
   width: 50px;
   height: 50px;
@@ -307,6 +312,13 @@ header #user__container {
 }
 #list__container .list__content table tbody tr .actions a:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#list__container .list__footer .page-item a {
+  transition: all 0.5s;
+}
+#list__container .list__footer .page-item a:hover {
+  background: #d70018;
+  color: #fff;
 }
 
 .button {

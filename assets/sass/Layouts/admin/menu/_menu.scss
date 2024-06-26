@@ -5,12 +5,12 @@
 
   #menu__list {
     .active {
-      background: $color-4;
-      color: $color-1;
+      // background: $color-4;
+      color: $color-2;
       box-shadow: $box-shadow-1;
 
       a {
-        color: $color-1;
+        color: $color-2;
       }
 
       &:hover {

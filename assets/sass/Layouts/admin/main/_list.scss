@@ -25,4 +25,16 @@
       }
     }
   }
+  .list__footer {
+    .page-item {
+      a {
+        transition: all 0.5s;
+
+        &:hover {
+          background: $color-2;
+          color: #fff;
+        }
+      }
+    }
+  }
 }
