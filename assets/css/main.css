@@ -184,9 +184,20 @@ a {
 }
 
 #menu {
+  display: flex;
   min-width: 300px;
   transition: all 0.5s;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+@media screen and (max-width: 1200px) {
+  #menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+  }
 }
 #menu #menu__list .active {
   color: #d70018;
@@ -219,49 +230,80 @@ a {
   color: #d70018;
   transition: all 0.5s;
 }
-#menu #iconClose {
+#menu #iconClose1 {
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  #menu #iconClose1 {
+    display: none;
+  }
+}
+#menu #iconClose2 {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  #menu #iconClose2 {
+    display: flex;
+  }
+}
+#menu .iconClose {
   width: 38px;
   height: 38px;
   background: #d70018;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   right: -19px;
   bottom: -19px;
 }
-#menu #iconClose a i {
+#menu .iconClose a i {
   font-size: 2rem;
   color: #fff;
 }
 
 .menu-active {
-  min-width: 70px !important;
+  min-width: 50px !important;
 }
-.menu-active #menu__list {
-  border-top: 1px solid #686d76;
-  padding-top: 5px !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.menu-active #logo__container {
+  border-bottom: 1px solid #c2bfbf;
+  margin-bottom: 5px;
+}
+.menu-active #logo__container div .logo-text {
+  display: none;
 }
 .menu-active #menu__list li {
-  width: 45px !important;
-  height: 45px !important;
+  display: block;
   padding: 0 !important;
-  display: flex !important;
-  align-items: center !important;
+  width: 50px !important;
+  height: 50px !important;
   justify-content: center !important;
 }
 .menu-active #menu__list li i {
   margin: 0 !important;
 }
+.menu-active #menu__list li .menu-text {
+  display: none;
+}
+.menu-active footer {
+  border-top: 0 !important;
+}
+.menu-active footer div p {
+  display: none;
+}
 
 header {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+header #btnButtonMenu {
+  display: none;
+}
 header #btnButtonMenu i {
   color: #686d76;
+}
+@media screen and (max-width: 1200px) {
+  header #btnButtonMenu {
+    display: block;
+  }
 }
 header div input::-moz-placeholder {
   font-style: italic;

@@ -29,36 +29,41 @@
 </head>
 
 <body>
-
     <div class="w-100 h-100vh d-flex">
-        <div id="menu" class="h-100vh d-none d-sm-none d-md-flex flex-column position-relative">
+
+        <div id="menu" class="h-100vh flex-column position-relative">
             <div id="logo__container" class="w-100 h-10 d-flex justify-content-center align-items-center">
                 <div class="fs-3 fst-italic text-01">
                     <i class="bi bi-box2-heart"></i>
-                    <span class="fw-bold">Shoping</span>
+                    <span class="logo-text fw-bold">Shoping</span>
                 </div>
             </div>
             <div class="w-100 h-80 ps-3 pe-3 position-relative">
                 <ul id="menu__list" class="w-100 ps-0">
                     <li class="p-1 ps-4 d-flex align-items-center rounded-3 mb-1 text-02 active">
                         <i class="bi bi-box-seam-fill fs-4 me-2"></i>
-                        <a href="#" class="text-02">Quản lý sản phẩm</a>
+                        <a href="#" class="text-02 menu-text">Quản lý sản phẩm</a>
                     </li>
 
                     <li class="p-1 ps-4 d-flex align-items-center rounded-3 mb-1 text-02">
                         <i class="bi bi-cart-fill fs-4 me-2"></i>
-                        <a href="#" class="text-02">Bán hàng</a>
+                        <a href="#" class="text-02 menu-text">Bán hàng</a>
                     </li>
 
                     <li class="p-1 ps-4 d-flex align-items-center rounded-3 mb-1 text-02">
                         <i class="bi bi-bar-chart-fill fs-4 me-2"></i>
-                        <a href="#" class="text-02">Doanh thu</a>
+                        <a href="#" class="text-02 menu-text">Doanh thu</a>
                     </li>
                 </ul>
-                <div id="iconClose" class="position-absolute">
-                    <a href="#" id="iconClose">
+                <div id="iconClose1" class="iconClose position-absolute">
+                    <a href="#" id="iconClose1">
                         <i class="bi bi-arrow-right-short d-none"></i>
                         <i class="bi bi-arrow-left-short"></i>
+                    </a>
+                </div>
+                <div id="iconClose2" class="iconClose position-absolute">
+                    <a href="#" id="iconClose2">
+                        <i class="bi bi-x"></i>
                     </a>
                 </div>
             </div>
@@ -74,7 +79,7 @@
         <div id="main" class="w-100 h-100vh bg-02 scroll-nonebar">
             <header
                 class="w-95 mx-auto mt-3 rounded-2 bg-white d-flex align-items-center justify-content-between py-2 px-3">
-                <a href="#" id="btnButtonMenu" class="d-block d-sm-block d-md-none ">
+                <a href="#" id="btnButtonMenu">
                     <i class="bi bi-list fs-2 text-02"></i>
                 </a>
                 <div class="w-70 d-flex align-items-center justify-content-between">
@@ -194,7 +199,7 @@
                         </div>
                         <div class="modal-footer">
                             <button id="btnThemSanPham" type="button" class="button">Thêm sản phẩm</button>
-                            <button id="btnLuuThayDoi" type="button" class="btn btn-primary">Lưu thay đổi</button>
+                            <button id="btnLuuThayDoi" type="button" class="button">Lưu thay đổi</button>
                         </div>
                     </div>
                 </div>

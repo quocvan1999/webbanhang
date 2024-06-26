@@ -18,3 +18,11 @@ $font-family-1: "Quicksand", sans-serif;
 // Box shadows
 $box-shadow-1: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 $box-shadow-2: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+// Break points
+$breakpoint: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 480px,
+);

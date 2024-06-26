@@ -2,8 +2,12 @@ header {
   box-shadow: $box-shadow-2;
 
   #btnButtonMenu {
+    display: none;
     i {
       color: $color-5;
+    }
+    @include responsive("extra-large") {
+      display: block;
     }
   }
 
