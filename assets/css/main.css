@@ -618,6 +618,13 @@ header #user__container {
   color: #cfcde4;
   border: 1px solid #76778e;
 }
+.dark-mode #thongBaoXoaSanPham .modal-dialog .modal-content {
+  background: #393d53;
+  color: #cfcde4;
+}
+.dark-mode #thongBaoXoaSanPham .modal-dialog .modal-content .modal-footer {
+  border-top: 1px solid #76778e;
+}
 
 .dark-mode #staticBackdrop .modal-dialog .modal-content {
   background: #393d53;
