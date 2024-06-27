@@ -9,6 +9,10 @@ header {
     @include responsive("extra-large") {
       display: block;
     }
+
+    @include responsive('small'){
+      margin-right: 10px;
+    }
   }
 
   div {

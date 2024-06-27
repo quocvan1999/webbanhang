@@ -192,7 +192,7 @@ a {
 @media screen and (max-width: 1200px) {
   #menu {
     display: none;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     background-color: #fff;
@@ -303,6 +303,11 @@ header #btnButtonMenu i {
 @media screen and (max-width: 1200px) {
   header #btnButtonMenu {
     display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  header #btnButtonMenu {
+    margin-right: 10px;
   }
 }
 header div input::-moz-placeholder {

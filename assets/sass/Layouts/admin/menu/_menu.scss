@@ -6,7 +6,7 @@
 
   @include responsive("extra-large") {
     display: none;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     background-color: $color-1;
