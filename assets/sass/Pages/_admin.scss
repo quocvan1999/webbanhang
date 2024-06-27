@@ -3,6 +3,11 @@
 
 // MAIN
 @import "../Layouts/admin/main/header";
-@import "../Layouts/admin/main/navAction";
 @import "../Layouts/admin/main/modalAddProduct";
 @import "../Layouts/admin/main/list";
+
+// MENU DARK
+@import "../Themes/darkMode/admin/menu/menuDarkMode";
+
+// MAIN DARK
+@import "../Themes/darkMode/admin/main/headerDarkMode";

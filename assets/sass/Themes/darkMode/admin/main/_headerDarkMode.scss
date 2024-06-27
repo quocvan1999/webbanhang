@@ -1,0 +1,52 @@
+.dark-mode {
+  header {
+    background: $color-dark-2 !important;
+
+    #btnButtonMenu {
+      i {
+        color: $color-dark-3;
+      }
+    }
+
+    div {
+      i {
+        color: $color-dark-3;
+      }
+
+      input {
+        background: $color-dark-2;
+
+        &::placeholder {
+          color: $color-dark-5;
+        }
+        &:focus {
+          background: $color-dark-2;
+          outline: none;
+          border: none;
+          color: $color-dark-3;
+          box-shadow: none !important;
+        }
+      }
+    }
+
+    #btnMode {
+      i {
+        color: $color-dark-3;
+      }
+    }
+
+    #thongBao__container {
+      #iconThongBao {
+        color: $color-dark-3;
+      }
+
+      #showThongBao {
+        background: $color-dark-2;
+        border: none !important;
+        #dongThongBao {
+          color: $color-1;
+        }
+      }
+    }
+  }
+}

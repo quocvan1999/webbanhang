@@ -1,5 +1,6 @@
 header {
   box-shadow: $box-shadow-1;
+  transition: all 0.5s;
 
   #btnButtonMenu {
     display: none;
@@ -19,6 +20,8 @@ header {
 
   div {
     input {
+      transition: all 0.5s !important;
+
       &::placeholder {
         font-style: italic;
         font-weight: 600;
