@@ -1,4 +1,4 @@
-// Color
+// Color light mode
 $color-1: #fff;
 $color-2: #665dd0;
 $color-3: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%);
@@ -8,12 +8,23 @@ $color-6: #f8f7fa;
 $color-7: #ff4c51;
 $color-8: #9089db;
 
+// Color dark mode
+$color-dark-1: #25293c;
+$color-dark-2: #393d53;
+$color-dark-3: #cfcde4;
+$color-dark-4: rgba(225, 222, 245, 0.137);
+// $color-dark-5: #f8f7fa;
+
 // Font Family
 $font-family-1: "Quicksand", sans-serif;
 
-// Box shadows
+// Box shadows light mode
 $box-shadow-1: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
 $box-shadow-2: 0px 2px 6px 0px rgba(115, 103, 240, 0.3);
+
+// Box shadows dark mode
+$box-shadow-3: 0 0.125rem 0.5rem 0 rgba(19, 17, 32, 0.18);
+$box-shadow-4: 0px 2px 6px 0px rgba(115, 103, 240, 0.3);
 
 // Break points
 $breakpoint: (

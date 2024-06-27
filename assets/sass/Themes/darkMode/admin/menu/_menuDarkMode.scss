@@ -1,47 +1,56 @@
 .dark-mode {
   #menu {
-    background: $color-dark-1;
+    background: $color-dark-2;
+    box-shadow: $box-shadow-3;
 
     #logo__container {
       div {
-        i {
-          color: $color-2;
-        }
         span {
-          color: $color-dark-5;
+          color: $color-dark-3;
         }
       }
     }
-    #menu__list {
-      .active {
-        background: $color-dark-4;
-        color: $color-dark-5;
 
-        a {
-          color: $color-dark-5;
+    #menu__list {
+      li {
+        a,
+        i {
+          color: $color-dark-3;
         }
 
         &:hover {
           background: $color-dark-4;
-          color: $color-dark-5;
-          a {
-            color: $color-dark-5;
-          }
         }
       }
 
-      li {
-        color: $color-dark-5;
-        a {
-          color: $color-dark-5;
+      .active {
+        box-shadow: $box-shadow-4;
+
+        a,
+        i {
+          color: $color-1;
         }
+
         &:hover {
-          color: $color-dark-5;
-          a {
-            color: $color-dark-5;
-          }
+          background: $color-3;
         }
       }
+    }
+
+    footer {
+      border-top: 1px solid $color-dark-4;
+
+      div {
+        p {
+          color: $color-dark-3;
+        }
+      }
+    }
+  }
+
+  .menu-active {
+    #logo__container {
+      border-bottom: 1px solid $color-dark-4;
     }
   }
 }

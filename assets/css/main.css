@@ -173,7 +173,6 @@
 
 body,
 html {
-  background-color: #f8f7fa;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
 }
@@ -185,6 +184,15 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+body {
+  background-color: #f8f7fa;
+  transition: all 0.5s;
+}
+
+.dark-mode {
+  background-color: #25293c !important;
 }
 
 #menu {
@@ -482,4 +490,38 @@ header #user__container {
 .input1:focus {
   outline: none;
   border: 1px solid #665dd0;
+}
+
+.dark-mode #menu {
+  background: #393d53;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(19, 17, 32, 0.18);
+}
+.dark-mode #menu #logo__container div span {
+  color: #cfcde4;
+}
+.dark-mode #menu #menu__list li a,
+.dark-mode #menu #menu__list li i {
+  color: #cfcde4;
+}
+.dark-mode #menu #menu__list li:hover {
+  background: rgba(225, 222, 245, 0.137);
+}
+.dark-mode #menu #menu__list .active {
+  box-shadow: 0px 2px 6px 0px rgba(115, 103, 240, 0.3);
+}
+.dark-mode #menu #menu__list .active a,
+.dark-mode #menu #menu__list .active i {
+  color: #fff;
+}
+.dark-mode #menu #menu__list .active:hover {
+  background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%);
+}
+.dark-mode #menu footer {
+  border-top: 1px solid rgba(225, 222, 245, 0.137);
+}
+.dark-mode #menu footer div p {
+  color: #cfcde4;
+}
+.dark-mode .menu-active #logo__container {
+  border-bottom: 1px solid rgba(225, 222, 245, 0.137);
 }/*# sourceMappingURL=main.css.map */
