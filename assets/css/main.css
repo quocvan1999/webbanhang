@@ -381,6 +381,12 @@ header #thongBao__container #showThongBao {
   right: 0;
   background-color: white;
   box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
+  border: 1px solid rgba(225, 222, 245, 0.137);
+}
+header #thongBao__container #showThongBao ul {
+  border-bottom: 1px solid #f3f3f4;
+  border-top: 1px solid #f3f3f4;
+  margin: 15px 0;
 }
 @media screen and (max-width: 480px) {
   header #thongBao__container #showThongBao {
@@ -535,7 +541,16 @@ header #user__container {
 }
 .dark-mode header #thongBao__container #showThongBao {
   background: #393d53;
-  border: none !important;
+  border: 1px solid rgba(225, 222, 245, 0.137) !important;
+  box-shadow: 0px 2px 6px 0px rgba(115, 103, 240, 0.3);
+}
+.dark-mode header #thongBao__container #showThongBao ul {
+  border-bottom: 1px solid rgba(225, 222, 245, 0.137);
+  border-top: 1px solid rgba(225, 222, 245, 0.137);
+}
+.dark-mode header #thongBao__container #showThongBao ul li i,
+.dark-mode header #thongBao__container #showThongBao ul li span {
+  color: #cfcde4;
 }
 .dark-mode header #thongBao__container #showThongBao #dongThongBao {
   color: #fff;
