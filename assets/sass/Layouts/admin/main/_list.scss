@@ -29,21 +29,31 @@
         tr {
           cursor: pointer;
 
-          th,
+          th {
+            color: $color-4;
+          }
+
           td {
             color: $color-4;
-            .actions {
-              a {
-                transition: all 0.5s;
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                line-height: 20px;
-                text-align: center;
+
+            a {
+              transition: all 0.5s;
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              line-height: 20px;
+              text-align: center;
+
+              i {
+                color: $color-4;
 
                 &:hover {
-                  box-shadow: $box-shadow-1;
+                  color: $color-2;
                 }
+              }
+
+              &:hover {
+                box-shadow: $box-shadow-1;
               }
             }
           }
@@ -51,6 +61,7 @@
       }
     }
   }
+
   .list__footer {
     .pagination {
       select {
@@ -61,7 +72,14 @@
     }
     .page-item {
       a {
+        color: $color-2;
         transition: all 0.5s;
+
+        &:focus {
+          outline: none;
+          border: none;
+          box-shadow: none;
+        }
 
         &:hover {
           background: $color-2;

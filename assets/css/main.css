@@ -418,12 +418,13 @@ header #user__container {
 #list__container .list__content table tbody tr {
   cursor: pointer;
 }
-#list__container .list__content table tbody tr th,
+#list__container .list__content table tbody tr th {
+  color: #444050;
+}
 #list__container .list__content table tbody tr td {
   color: #444050;
 }
-#list__container .list__content table tbody tr th .actions a,
-#list__container .list__content table tbody tr td .actions a {
+#list__container .list__content table tbody tr td a {
   transition: all 0.5s;
   display: inline-block;
   width: 20px;
@@ -431,8 +432,13 @@ header #user__container {
   line-height: 20px;
   text-align: center;
 }
-#list__container .list__content table tbody tr th .actions a:hover,
-#list__container .list__content table tbody tr td .actions a:hover {
+#list__container .list__content table tbody tr td a i {
+  color: #444050;
+}
+#list__container .list__content table tbody tr td a i:hover {
+  color: #665dd0;
+}
+#list__container .list__content table tbody tr td a:hover {
   box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
 }
 @media screen and (max-width: 480px) {
@@ -441,7 +447,13 @@ header #user__container {
   }
 }
 #list__container .list__footer .page-item a {
+  color: #665dd0;
   transition: all 0.5s;
+}
+#list__container .list__footer .page-item a:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 #list__container .list__footer .page-item a:hover {
   background: #665dd0;
