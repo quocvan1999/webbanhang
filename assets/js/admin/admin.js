@@ -1,5 +1,9 @@
 document.querySelector("#iconClose1").onclick = function () {
   document.querySelector("#menu").classList.toggle("menu-active");
+  document
+    .querySelector("#iconClose1 i:first-child")
+    .classList.toggle("d-none");
+  document.querySelector("#iconClose1 i:last-child").classList.toggle("d-none");
 };
 
 document.querySelector("#iconClose2").onclick = function () {

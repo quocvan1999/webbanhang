@@ -1,0 +1,47 @@
+.dark-mode {
+  #menu {
+    background: $color-dark-1;
+
+    #logo__container {
+      div {
+        i {
+          color: $color-2;
+        }
+        span {
+          color: $color-dark-5;
+        }
+      }
+    }
+    #menu__list {
+      .active {
+        background: $color-dark-4;
+        color: $color-dark-5;
+
+        a {
+          color: $color-dark-5;
+        }
+
+        &:hover {
+          background: $color-dark-4;
+          color: $color-dark-5;
+          a {
+            color: $color-dark-5;
+          }
+        }
+      }
+
+      li {
+        color: $color-dark-5;
+        a {
+          color: $color-dark-5;
+        }
+        &:hover {
+          color: $color-dark-5;
+          a {
+            color: $color-dark-5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,17 +1,17 @@
 .text-01 {
-  color: #d70018;
+  color: #fff;
 }
 
 .text-02 {
-  color: #686d76;
+  color: #F3F3F4;
 }
 
 .bg-01 {
-  background: linear-gradient(90deg, rgb(215, 0, 24) 49%, rgb(213, 71, 71) 100%);
+  background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%);
 }
 
 .bg-02 {
-  background: #fcfcfc;
+  background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%);
 }
 
 .h-100vh {
@@ -169,7 +169,7 @@
 
 body,
 html {
-  background-color: #fff;
+  background-color: #F8F7FA;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
 }
@@ -185,50 +185,73 @@ a {
 
 #menu {
   display: flex;
+  position: relative;
   min-width: 300px;
   transition: all 0.5s;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
+  background: #fff;
 }
 @media screen and (max-width: 1200px) {
   #menu {
     display: none;
-    position: fixed !important;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #fff;
     z-index: 1;
   }
 }
-#menu #menu__list .active {
-  color: #d70018;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+#menu #logo__container div i {
+  color: #665dd0;
 }
-#menu #menu__list .active a {
-  color: #d70018;
+#menu #logo__container div span {
+  color: #444050;
 }
-#menu #menu__list .active:hover {
-  background: linear-gradient(90deg, rgb(215, 0, 24) 49%, rgb(213, 71, 71) 100%);
-  color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-#menu #menu__list .active:hover a {
-  color: #fff;
+#menu #menu__list {
+  margin-top: 10px;
 }
 #menu #menu__list li {
   font-weight: 600;
   transition: all 0.5s;
   white-space: nowrap;
   overflow: hidden;
+  cursor: pointer;
   width: 100%;
 }
-#menu #menu__list li:hover {
-  color: #d70018;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-#menu #menu__list li:hover a {
-  color: #d70018;
+#menu #menu__list li a,
+#menu #menu__list li i {
   transition: all 0.5s;
+  color: #444050;
+}
+#menu #menu__list li:hover {
+  background: #F3F3F4;
+}
+#menu #menu__list li:hover a,
+#menu #menu__list li:hover i {
+  color: #665dd0;
+}
+#menu #menu__list .active {
+  background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%);
+  color: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(115, 103, 240, 0.3);
+}
+#menu #menu__list .active a,
+#menu #menu__list .active i {
+  color: #fff;
+}
+#menu #menu__list .active:hover {
+  background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%);
+  box-shadow: 0px 2px 6px 0px rgba(115, 103, 240, 0.3);
+}
+#menu #menu__list .active:hover a,
+#menu #menu__list .active:hover i {
+  color: #fff;
+}
+#menu footer {
+  border-top: 1px solid #F3F3F4;
+}
+#menu footer div p {
+  color: #444050;
 }
 #menu #iconClose1 {
   display: flex;
@@ -249,7 +272,7 @@ a {
 #menu .iconClose {
   width: 38px;
   height: 38px;
-  background: #d70018;
+  background: #665dd0;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -265,18 +288,13 @@ a {
   min-width: 50px !important;
 }
 .menu-active #logo__container {
-  border-bottom: 1px solid #c2bfbf;
-  margin-bottom: 5px;
+  border-bottom: 1px solid #F3F3F4;
 }
 .menu-active #logo__container div .logo-text {
   display: none;
 }
 .menu-active #menu__list li {
-  display: block;
-  padding: 0 !important;
-  width: 50px !important;
-  height: 50px !important;
-  justify-content: center !important;
+  padding: 5px 15px !important;
 }
 .menu-active #menu__list li i {
   margin: 0 !important;
@@ -292,13 +310,13 @@ a {
 }
 
 header {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
 }
 header #btnButtonMenu {
   display: none;
 }
 header #btnButtonMenu i {
-  color: #686d76;
+  color: #F3F3F4;
 }
 @media screen and (max-width: 1200px) {
   header #btnButtonMenu {
@@ -312,11 +330,11 @@ header #btnButtonMenu i {
 }
 header div input::-moz-placeholder {
   font-style: italic;
-  color: #c2bfbf;
+  color: #F8F7FA;
 }
 header div input::placeholder {
   font-style: italic;
-  color: #c2bfbf;
+  color: #F8F7FA;
 }
 header div input:focus {
   outline: none;
@@ -327,24 +345,46 @@ header #thongBao__container #showThongBao {
   width: 400px;
   right: 0;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
+}
+@media screen and (max-width: 480px) {
+  header #thongBao__container #showThongBao {
+    position: fixed !important;
+    width: 100%;
+  }
 }
 header #user__container {
   width: 50px;
   height: 50px;
-  border: 2px dashed #d70018;
+  border: 2px dashed #665dd0;
 }
 
 #main nav {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
 }
 
 #staticBackdrop .modal-dialog {
   max-width: 70%;
 }
+@media screen and (max-width: 480px) {
+  #staticBackdrop .modal-dialog {
+    min-width: 95%;
+    margin: auto;
+  }
+}
 
 #list__container {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
+}
+@media screen and (max-width: 480px) {
+  #list__container .list__header #typeFilter {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #list__container .list__content table .d-smNone {
+    display: none !important;
+  }
 }
 #list__container .list__content table tbody tr {
   cursor: pointer;
@@ -358,18 +398,23 @@ header #user__container {
   text-align: center;
 }
 #list__container .list__content table tbody tr .actions a:hover {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
+}
+@media screen and (max-width: 480px) {
+  #list__container .list__footer .pagination select {
+    min-width: 20%;
+  }
 }
 #list__container .list__footer .page-item a {
   transition: all 0.5s;
 }
 #list__container .list__footer .page-item a:hover {
-  background: #d70018;
+  background: #665dd0;
   color: #fff;
 }
 
 .button {
-  background: #d70018;
+  background: #665dd0;
   color: #fff;
   font-weight: 600;
   padding: 8px 15px;
@@ -378,7 +423,7 @@ header #user__container {
   cursor: pointer;
 }
 .button:hover {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
 }
 
 .input1 {
@@ -388,5 +433,5 @@ header #user__container {
 }
 .input1:focus {
   outline: none;
-  border: 1px solid #d70018;
+  border: 1px solid #665dd0;
 }/*# sourceMappingURL=main.css.map */

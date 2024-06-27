@@ -1,5 +1,10 @@
 #staticBackdrop {
   .modal-dialog {
     max-width: 70%;
+
+    @include responsive("small") {
+      min-width: 95%;
+      margin: auto;
+    }
   }
 }

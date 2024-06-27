@@ -1,23 +1,20 @@
 // Color
 $color-1: #fff;
-$color-2: #d70018;
-$color-3: #fcfcfc;
-$color-4: linear-gradient(
-  90deg,
-  rgba(215, 0, 24, 1) 49%,
-  rgba(213, 71, 71, 1) 100%
-);
-$color-5: #686d76;
-$color-6: #c2bfbf;
-$color-7: #9e091b;
+$color-2: #665dd0;
+$color-3: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #7367f0 100%);
+$color-4: #444050;
+$color-5: #F3F3F4;
+$color-6: #F8F7FA;
+
 $color-8: #c2bfbf;
+
 
 // Font Family
 $font-family-1: "Quicksand", sans-serif;
 
 // Box shadows
-$box-shadow-1: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-$box-shadow-2: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+$box-shadow-1: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
+$box-shadow-2: 0px 2px 6px 0px rgba(115, 103, 240, 0.3);
 
 // Break points
 $breakpoint: (

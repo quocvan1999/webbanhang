@@ -1,5 +1,5 @@
 header {
-  box-shadow: $box-shadow-2;
+  box-shadow: $box-shadow-1;
 
   #btnButtonMenu {
     display: none;
@@ -10,7 +10,7 @@ header {
       display: block;
     }
 
-    @include responsive('small'){
+    @include responsive("small") {
       margin-right: 10px;
     }
   }
@@ -35,6 +35,11 @@ header {
       right: 0;
       background-color: white;
       box-shadow: $box-shadow-1;
+
+      @include responsive("small") {
+        position: fixed !important; 
+        width: 100%;
+      }
     }
   }
 

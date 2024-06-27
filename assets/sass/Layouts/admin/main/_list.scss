@@ -1,8 +1,22 @@
 #list__container {
-  box-shadow: $box-shadow-2;
+  box-shadow: $box-shadow-1;
+
+  .list__header {
+    #typeFilter {
+      @include responsive("small") {
+        max-width: 50%;
+      }
+    }
+  }
 
   .list__content {
     table {
+      .d-smNone {
+        @include responsive("small") {
+          display: none !important;
+        }
+      }
+
       tbody {
         tr {
           cursor: pointer;
@@ -26,6 +40,13 @@
     }
   }
   .list__footer {
+    .pagination {
+      select {
+        @include responsive("small") {
+          min-width: 20%;
+        }
+      }
+    }
     .page-item {
       a {
         transition: all 0.5s;
