@@ -7,4 +7,17 @@
       margin: auto;
     }
   }
+
+  .modal-body {
+    form {
+      div {
+        input {
+          @extend .style-input;
+        }
+      }
+      select {
+        @extend .style-select-lightMode;
+      }
+    }
+  }
 }

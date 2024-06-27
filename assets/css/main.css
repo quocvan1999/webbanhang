@@ -1,3 +1,19 @@
+.style-select-darkMode, .dark-mode #staticBackdrop .modal-dialog .modal-content .modal-body form div select, .dark-mode #list__container .list__footer .pagination select, .dark-mode #list__container .list__header #typeFilter {
+  background: #393d53;
+  color: #cfcde4;
+  padding: 5px 7px;
+  border: 1px solid #76778e;
+  border-radius: 7px;
+}
+
+.style-select-lightMode, #staticBackdrop .modal-body form select {
+  background: #fff;
+  padding: 5px 7px;
+  color: #444050;
+  border: 1px solid #f3f3f4;
+  border-radius: 7px;
+}
+
 .text-01 {
   color: #fff;
 }
@@ -412,9 +428,15 @@ header #user__container {
     margin: auto;
   }
 }
-
 #list__container {
   box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
+  background: #fff;
+}
+#list__container .list__header {
+  border-bottom: 1px solid #f3f3f4;
+}
+#list__container .list__header #typeFilter {
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
   #list__container .list__header #typeFilter {
@@ -454,6 +476,9 @@ header #user__container {
 }
 #list__container .list__content table tbody tr td a:hover {
   box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
+}
+#list__container .list__footer {
+  border-top: 1px solid #f3f3f4;
 }
 @media screen and (max-width: 480px) {
   #list__container .list__footer .pagination select {
@@ -510,6 +535,7 @@ header #user__container {
 
 .dark-mode header {
   background: #393d53 !important;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(19, 17, 32, 0.18);
 }
 .dark-mode header #btnButtonMenu i {
   color: #cfcde4;
@@ -556,6 +582,67 @@ header #user__container {
   color: #fff;
 }
 
+.dark-mode #list__container {
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(19, 17, 32, 0.18);
+  background: #393d53;
+}
+.dark-mode #list__container .list__header {
+  border-bottom: 1px solid #76778e;
+}
+.dark-mode #list__container .list__content table thead tr th {
+  background: #393d53;
+  color: #cfcde4;
+  border-bottom: 1px solid #76778e;
+}
+.dark-mode #list__container .list__content table tbody tr {
+  border-top: none !important;
+}
+.dark-mode #list__container .list__content table tbody tr th {
+  background: #393d53 !important;
+  color: #cfcde4 !important;
+  border-bottom: 1px solid #76778e;
+}
+.dark-mode #list__container .list__content table tbody tr td {
+  background: #393d53 !important;
+  color: #cfcde4 !important;
+  border-bottom: 1px solid #76778e;
+}
+.dark-mode #list__container .list__content table tbody tr td a i {
+  color: #cfcde4;
+}
+.dark-mode #list__container .list__footer {
+  border-top: 1px solid #76778e;
+}
+.dark-mode #list__container .list__footer .pagination .page-item a {
+  background: #393d53;
+  color: #cfcde4;
+  border: 1px solid #76778e;
+}
+
+.dark-mode #staticBackdrop .modal-dialog .modal-content {
+  background: #393d53;
+}
+.dark-mode #staticBackdrop .modal-dialog .modal-content .modal-header {
+  border-bottom: 1px solid #76778e;
+}
+.dark-mode #staticBackdrop .modal-dialog .modal-content .modal-header h1 {
+  color: #cfcde4;
+}
+.dark-mode #staticBackdrop .modal-dialog .modal-content .modal-body form div label {
+  color: #cfcde4;
+}
+.dark-mode #staticBackdrop .modal-dialog .modal-content .modal-body form div textarea {
+  background: #393d53;
+  color: #cfcde4;
+  border: 1px solid #76778e;
+}
+.dark-mode #staticBackdrop .modal-dialog .modal-content .modal-body form div textarea::-moz-placeholder {
+  color: #76778e;
+}
+.dark-mode #staticBackdrop .modal-dialog .modal-content .modal-body form div textarea::placeholder {
+  color: #76778e;
+}
+
 .button {
   background: #665dd0;
   color: #fff;
@@ -570,12 +657,24 @@ header #user__container {
   background: #9089db;
 }
 
-.input1 {
+.style-input, #staticBackdrop .modal-body form div input {
   border: 1px solid #f3f3f4;
   padding: 5px 7px;
   border-radius: 7px;
 }
-.input1:focus {
+.style-input:focus, #staticBackdrop .modal-body form div input:focus {
+  outline: none;
+  border: 1px solid #665dd0;
+}
+
+.style-input-darkMode, .dark-mode #staticBackdrop .modal-dialog .modal-content .modal-body form div input {
+  border: 1px solid #76778e;
+  padding: 5px 7px;
+  border-radius: 7px;
+  background: #393d53;
+  color: #cfcde4;
+}
+.style-input-darkMode:focus, .dark-mode #staticBackdrop .modal-dialog .modal-content .modal-body form div input:focus {
   outline: none;
   border: 1px solid #665dd0;
 }/*# sourceMappingURL=main.css.map */

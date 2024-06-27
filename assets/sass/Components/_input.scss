@@ -1,12 +1,23 @@
-.input1 {
-    border: 1px solid $color-5;
-    padding: 5px 7px;
-    border-radius: 7px;
+.style-input {
+  border: 1px solid $color-5;
+  padding: 5px 7px;
+  border-radius: 7px;
 
-    &:focus {
-      outline: none;
-      border: 1px solid $color-2;
-    }
-  
+  &:focus {
+    outline: none;
+    border: 1px solid $color-2;
+  }
 }
 
+.style-input-darkMode {
+  border: 1px solid $color-dark-5;
+  padding: 5px 7px;
+  border-radius: 7px;
+  background: $color-dark-2;
+  color: $color-dark-3;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $color-2;
+  }
+}

@@ -1,8 +1,13 @@
 #list__container {
   box-shadow: $box-shadow-1;
+  background: $color-1;
 
   .list__header {
+    border-bottom: 1px solid $color-5;
+
     #typeFilter {
+      cursor: pointer;
+
       @include responsive("small") {
         max-width: 50%;
       }
@@ -63,6 +68,8 @@
   }
 
   .list__footer {
+    border-top: 1px solid $color-5;
+
     .pagination {
       select {
         @include responsive("small") {

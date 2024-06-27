@@ -1,0 +1,42 @@
+.dark-mode {
+  #staticBackdrop {
+    .modal-dialog {
+      .modal-content {
+        background: $color-dark-2;
+
+        .modal-header {
+          border-bottom: 1px solid $color-dark-5;
+
+          h1 {
+            color: $color-dark-3;
+          }
+        }
+
+        .modal-body {
+          form {
+            div {
+              label {
+                color: $color-dark-3;
+              }
+              input {
+                @extend .style-input-darkMode;
+              }
+              select {
+                @extend .style-select-darkMode;
+              }
+              textarea {
+                background: $color-dark-2;
+                color: $color-dark-3;
+                border: 1px solid $color-dark-5;
+
+                &::placeholder {
+                  color: $color-dark-5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
