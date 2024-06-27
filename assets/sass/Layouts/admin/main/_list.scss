@@ -17,21 +17,33 @@
         }
       }
 
+      thead {
+        tr {
+          th {
+            color: $color-4;
+          }
+        }
+      }
+
       tbody {
         tr {
           cursor: pointer;
 
-          .actions {
-            a {
-              transition: all 0.5s;
-              display: inline-block;
-              width: 20px;
-              height: 20px;
-              line-height: 20px;
-              text-align: center;
+          th,
+          td {
+            color: $color-4;
+            .actions {
+              a {
+                transition: all 0.5s;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
 
-              &:hover {
-                box-shadow: $box-shadow-1;
+                &:hover {
+                  box-shadow: $box-shadow-1;
+                }
               }
             }
           }

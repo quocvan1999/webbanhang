@@ -3,7 +3,7 @@
 }
 
 .text-02 {
-  color: #F3F3F4;
+  color: #f3f3f4;
 }
 
 .bg-01 {
@@ -159,6 +159,10 @@
   scrollbar-width: none;
 }
 
+.color-01 {
+  color: #665dd0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -169,7 +173,7 @@
 
 body,
 html {
-  background-color: #F8F7FA;
+  background-color: #f8f7fa;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
 }
@@ -224,7 +228,7 @@ a {
   color: #444050;
 }
 #menu #menu__list li:hover {
-  background: #F3F3F4;
+  background: #f3f3f4;
 }
 #menu #menu__list li:hover a,
 #menu #menu__list li:hover i {
@@ -248,7 +252,7 @@ a {
   color: #fff;
 }
 #menu footer {
-  border-top: 1px solid #F3F3F4;
+  border-top: 1px solid #f3f3f4;
 }
 #menu footer div p {
   color: #444050;
@@ -288,7 +292,7 @@ a {
   min-width: 50px !important;
 }
 .menu-active #logo__container {
-  border-bottom: 1px solid #F3F3F4;
+  border-bottom: 1px solid #f3f3f4;
 }
 .menu-active #logo__container div .logo-text {
   display: none;
@@ -350,7 +354,7 @@ header #thongBao__container #numberThongBao {
   display: inline-block;
   border-radius: 50%;
   color: #fff;
-  background: #FF4C51;
+  background: #ff4c51;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -371,6 +375,9 @@ header #thongBao__container #showThongBao {
     position: fixed !important;
     width: 100%;
   }
+}
+header #thongBao__container #showThongBao #dongThongBao {
+  color: #665dd0;
 }
 header #user__container {
   width: 40px;
@@ -405,10 +412,18 @@ header #user__container {
     display: none !important;
   }
 }
+#list__container .list__content table thead tr th {
+  color: #444050;
+}
 #list__container .list__content table tbody tr {
   cursor: pointer;
 }
-#list__container .list__content table tbody tr .actions a {
+#list__container .list__content table tbody tr th,
+#list__container .list__content table tbody tr td {
+  color: #444050;
+}
+#list__container .list__content table tbody tr th .actions a,
+#list__container .list__content table tbody tr td .actions a {
   transition: all 0.5s;
   display: inline-block;
   width: 20px;
@@ -416,7 +431,8 @@ header #user__container {
   line-height: 20px;
   text-align: center;
 }
-#list__container .list__content table tbody tr .actions a:hover {
+#list__container .list__content table tbody tr th .actions a:hover,
+#list__container .list__content table tbody tr td .actions a:hover {
   box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
 }
 @media screen and (max-width: 480px) {
@@ -443,10 +459,11 @@ header #user__container {
 }
 .button:hover {
   box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
+  background: #9089db;
 }
 
 .input1 {
-  border: 1px solid #FF4C51;
+  border: 1px solid #f3f3f4;
   padding: 5px 7px;
   border-radius: 7px;
 }
